@@ -1,0 +1,98 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.rankingsContainer {
+  color: #27221E;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 60%; }
+
+#mainRankingsContainer {
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 1em 0.8em 1.5em; }
+  #mainRankingsContainer h2 {
+    color: #357ebd;
+    text-align: center;
+    margin: 0; }
+  #mainRankingsContainer h3 {
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    color: #9f9f9f; }
+
+#leftLesser {
+  float: left;
+  width: 43%; }
+
+.rankListing {
+  overflow: hidden;
+  padding-left: 1em; }
+  .rankListing:after {
+    height: 1px;
+    background: #E5E0E0;
+    display: block;
+    margin: 0.5em 0;
+    content: ""; }
+  .rankListing .rankLabel {
+    float: left;
+    width: 10%;
+    margin-right: 5%; }
+    .rankListing .rankLabel p {
+      text-align: right;
+      color: #9f9f9f; }
+  .rankListing p {
+    margin: 0.1em 0; }
+
+.rankListing:last-of-type:after {
+  display: none; }
+
+#listRankingsContainer {
+  width: 56%;
+  float: left; }
+
+.rankingsOption {
+  margin-bottom: 2em; }
+  .rankingsOption div, .rankingsOption p {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    -o-user-select: none;
+    user-select: none; }
+  .rankingsOption:last-of-type {
+    margin-bottom: 0; }
+
+.rankingsOption input {
+  float: left; }
+
+.rankingsOption p {
+  font-size: 0.8em;
+  margin-left: 2em !important;
+  margin-top: 0; }
+
+.rankingsOption p span {
+  font-size: 1.5em; }
+
+.rankingsOption div {
+  float: left;
+  overflow: hidden; }
+
+.check {
+  width: 1.6em;
+  height: 1.6em;
+  border: 1px solid #bbb;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 1em;
+  margin-top: 0.3em; }
+  .check img {
+    width: 1.6em; }
+  .check.undisplayCheck img {
+    display: none; }
+
+/*# sourceMappingURL=rankings.css.map */
