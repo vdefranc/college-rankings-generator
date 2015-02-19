@@ -35,7 +35,7 @@ app.service('updateService', function () {
 				holding[currentSchool] = {name: currentSchool, score: that.indexHelper(i)};
 			}
 		}
-		
+		g
 		return holding;
 	};
 

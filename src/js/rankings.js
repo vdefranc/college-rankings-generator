@@ -22,7 +22,6 @@ app.controller('RankingsController', ['$scope', 'updateService', function ($scop
 		};
 
 		$scope.changeState = function (item) {
-
 			$scope.rankingsForm[item] ? $scope.rankingsForm[item] = false:
 										$scope.rankingsForm[item] = true;
 
