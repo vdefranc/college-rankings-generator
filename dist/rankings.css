@@ -74,10 +74,12 @@ body {
 .rankingsOption p {
   font-size: 0.8em;
   margin-left: 2em !important;
-  margin-top: 0; }
+  margin-top: 0;
+  font-style: italic; }
 
 .rankingsOption p span {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-style: normal; }
 
 .rankingsOption div {
   float: left;
