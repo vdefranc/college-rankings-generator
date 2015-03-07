@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 	    watch: {
 	    	js: {
 	    		files: ['src/js/*.js'],
-		    	tasks: ['jshint', 'concat', 'jasmine',]
+		    	tasks: ['concat','jshint']
 	    	},
 	      css: {
 				files: '**/*.scss',
@@ -27,9 +27,8 @@ module.exports = function(grunt) {
 			options : {
 			    specs : 'test/rankings-specs.js',
 			    vendor: [
-					'lib/angular.min.js',
-					'lib/angular-mocks.js',
-					'lib/jquery-1.11.1.min.js'
+					'lib/angular-1.2.27.min.js',
+					'lib/angular-mocks-1.2.27.js'
 				]
 			}
 		},
@@ -52,4 +51,5 @@ module.exports = function(grunt) {
 
 	// Default task(s).
 	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('test', ['jasmine']);
 };

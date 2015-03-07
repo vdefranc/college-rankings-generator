@@ -1,14 +1,14 @@
 app.service('updateService', function () {
-	var that = this;
-	var holding = {};
-
+	var that = this,
+		holding = {};
+	
 	this.updateResult = function (rankObj, schools) {
 			holding = {};
 			var holdingArray = [];
 
 			for (var prop in rankObj) {
-				if (rankObj[prop] === true) {
-					that.evalList(schools[prop]);		
+				if (rankObj[prop]) {
+					this.evalList(schools[prop]);		
 				}
 			}
 
@@ -30,16 +30,10 @@ app.service('updateService', function () {
 			currentSchool = list[i];
 
 			if (holding[currentSchool]) {
-				holding[currentSchool].score += that.indexHelper(i);
+				holding[currentSchool].score += (50 - i);
 			} else {
-				holding[currentSchool] = {name: currentSchool, score: that.indexHelper(i)};
+				holding[currentSchool] = {name: currentSchool, score: (50 - i)};
 			}
 		}
-		g
-		return holding;
-	};
-
-	this.indexHelper = function (index) {
-		return 50 - index;
 	};
 });

@@ -1,7 +1,7 @@
 describe('RankingsController', function () {
 	beforeEach(module('Rankings'));
-
 	var ctrl, scope;
+
 	 // inject the $controller and $rootScope services
 	 // in the beforeEach block
 	beforeEach(inject(function($controller, $rootScope) {
@@ -51,8 +51,8 @@ describe('updateService', function () {
   		});
 
   		it('should create a property for each school', function () {
-  			expect(evaledList['Princeton University']).toBeTruthy();
-  			expect(evaledList['Harvard University']).toBeTruthy();
+  			expect(evaledList.Princeton).toBeTruthy();
+  			expect(evaledList.Harvard).toBeTruthy();
   		});
   	});
 
